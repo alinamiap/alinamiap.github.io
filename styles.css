@@ -1,0 +1,85 @@
+.home-page{
+    background-image: url('./assets/spacebg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 100vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.box{
+  background-color: #a982c8;
+  width: 300px;
+  padding: 50px;
+  margin: 20px;
+  
+}
+
+#asize{
+    object-position: top 40px left 20px;
+    width: 60%;
+}
+
+.float{
+    animation: float 10s ease infinite;
+}
+@keyframes float{
+    0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateY(-15px);}
+}
+
+#ppsize{
+    width: 25%;
+    position: fixed;
+    bottom: 30%;
+    right: 10%;
+}
+
+.spin {
+    width: 100%;
+    height: auto;
+    animation: spin 20s infinite linear;
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  #ssize{
+    width: 35%;
+    position: fixed;
+    bottom: 27%;
+    right: 6%;
+  }
+
+  .spin2 {
+    width: 100%;
+    height: auto;
+    animation: spin2 20s infinite linear;
+  }
+  @keyframes spin2 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+  }
+
+  #bpsize{
+    width:10%;
+    position: fixed;
+    left: 35%;
+    bottom: 12%;
+  }
+
+  .spinbp {
+    width: 100%;
+    height: auto;
+    animation: spinbp 8s infinite linear;
+  }
+  @keyframes spinbp {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+  }
