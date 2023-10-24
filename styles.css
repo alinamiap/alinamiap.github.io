@@ -12,12 +12,18 @@ body{
     overflow-x: hidden;
 }
 
+ht{
+  color: white;
+  position: static;
+}
+
 .box{
-  background-color: #a982c8;
+  background-color: #9D72bf;
   width: 300px;
   padding: 50px;
-  margin: 20px;
-  
+  position: fixed;
+  top: 10%;
+  left:25%
 }
 
 #asize{
@@ -51,10 +57,10 @@ body{
   }
 
   #ssize{
-    width: 35%;
+    width: 5%;
     position: fixed;
-    bottom: 27%;
-    right: 6%;
+    bottom: 47%;
+    right: 20%;
   }
 
   .spin2 {
@@ -63,14 +69,14 @@ body{
     animation: spin2 20s infinite linear;
   }
   @keyframes spin2 {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(215px); }
+    to { transform: rotate(-360deg) translateX(215px); }
   }
 
   #bpsize{
     width:10%;
     position: fixed;
-    left: 35%;
+    left: 47%;
     bottom: 12%;
   }
 
@@ -82,4 +88,18 @@ body{
   @keyframes spinbp {
     from { transform: rotate(0deg);}
     to { transform: rotate(360deg);}
+  }
+
+  #stsize{
+    position: fixed;
+  }
+
+  .star{
+    width: 7%;
+    height: auto;
+    animation: translate 1s infinite linear;
+  }
+  @keyframes translate {
+    from {transform: rotate(20deg) translateX(500px);}
+    to {transform: rotate(10deg) translateX(-800px);}
   }
